@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "23933b6e-8fb7-4380-8c3e-eb190deddb20",
+		"name": "Triforce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Requests",
+			"item": [
+				{
+					"name": "Main",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all financial institutions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/institutions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"institutions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All accounts by a given credential",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/accounts?connection_id=0049a6cf-479d-43e4-b74a-fca03801dcd4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"accounts"
+							],
+							"query": [
+								{
+									"key": "connection_id",
+									"value": "0049a6cf-479d-43e4-b74a-fca03801dcd4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All transactions made from a given account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/accounts/9a483102-6966-482c-afdf-bfbbbfd781f6/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"accounts",
+								"9a483102-6966-482c-afdf-bfbbbfd781f6",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST requests",
+			"item": [
+				{
+					"name": "Get credentials from companies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/credentials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"credentials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request for data to be updated",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/accounts/0049a6cf-479d-43e4-b74a-fca03801dcd4/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"accounts",
+								"0049a6cf-479d-43e4-b74a-fca03801dcd4",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "----BEGIN RSA PRIVATE KEY-----\\nMIIEowIBAAKCAQEAuS7bCVzyuV6wUMZl5PlgjU2kguWnK4ze68nJU9Fl7TjhqLuM\\nJPQYDj/PXzhlH4Li5NxC3zQ0XRDZVouhjS3SyaLwOaYNSBeOejeYkby5rUttT2p2\\nP/fe1lSpy4YigWIC8osA0ajXszBnmUuSGHcG5hecVbotekG2t2nNAmh/xt/yeenM\\n7PiptzSn14QEpxM3YvyB+hgUiQpVOA3VSoeJ4lqDjGJURrP8Tpk1ukhwW3Ml5kor\\ncOvD9uhAbruxfxsJuplw991+NdGPI5rszDWPiLMJzeX7ImmWWNECjGxc7FX637gP\\n70ZnyT8+8a5nN+qSf9rPMSuBoFASoH8XLca5FQIDAQABAoIBAQCVjUiprB3+JIFi\\nCof5vogCNeUZLVyvaCoT5DeqcF7PkPN1MFmC8nqG73OK4+GO7EZPK6750ZBEZLoR\\nEd0bRhmIbAVzmS36vcN74nBdqjuNv299Bm6PRJ/7Gg6yZhZxxPS6ahX0PFZOyVWx\\nUH2hMmco5YKFHUFjDbUBNPmy6y/eLFW1sMqQwhpvsnglncK1ANzKrwxhCmmd8m7p\\nPtoCEseLAjRdPu39XeclJ02VwdTqbE0RYdMZ7TYIYvewuv1lTE0WJXeMAEOmcgBm\\nX56Lgi8A6q8LdT4j3ZzmLRXJ+G76YSIdLPE29Xe06CSbF+v8iMWfKkc8gWvpJ2UR\\n2iNRGAA1AoGBAPYYOPodJHuqDNkc8N7tbn9ACQFeqwpfM+uc3+zOMuKlHpsXbfRz\\n8naIrzwLt6ffT+05Bqrv2vPcUzDlVSc6VBgcn/9emghrx0Rbc5ohmDH/DDIWZ4/k\\nNvew4XWUPdXIR84nCqTH45Q8GxQIYZfKdfd+60rt460VF2gT5lzvwI1TAoGBAMCi\\n/tX3txDhnVgAyDmz118srcndms/+ZIjOL2CYPsN31C9PSKVHbRfEsWKrl/3bu2fb\\nY265oFUG+7yrHWz4cEZ3wXkjFyp53IWRLsWlwAnNOVsas3ntV18MLzQrYPUHuHab\\njfF7vMdmPABK7efxf3LuPxrnGf6GYNDZ3UFUXmr3AoGALwsSWT2Y68rmCdrucK8S\\noGCtWAWwzJrGYhPq+mmwcIMABsXDzycbAm2+kcvrn7ugm8h67dJMGLHVdVNho84S\\npUlTjI2ZBGMWBIs23g/t+CC5RBnkUi1eFJtLfh6Ic4WFtHLiJf3QE1YqFvpDLbEW\\nO+mXMQuoqj2N6+dh8gIi3OECgYBU2bbMAo/FRMtsjvOizv9nsaNfDlh5k0EvLTqb\\nHpROvwJcUFzcSEjaNk43+wM400eJ6I20oNjpeuj5YpnUfN3ffDJhLD6w+/pRbvCe\\nKHMdHiNMaMdzRkK83/4OyaisZVkwDTaJjopJflOhgV+nUa1kr2JmdDLz9LbCZ6RY\\neVQZYwKBgHR+FBso3+JL8Lp+yWOwoGshCI2BW2joVKdsu0UullfOEVfqp/wC0cZW\\n80od3R/qR0KND+9KeNuymwUhS9JAvpAzjPXrUGEMEpmWFCSEsR52oB7C7dEUSBbY\\nZiqddaTl5U7j5Fsw2/SW0iIr++s5B7CkmNHf5Yyvj7XWmSJc6jyS\\n-----END RSA PRIVATE KEY-----\\n\\n",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "4d4db59e-4a79-45ca-8ea2-acdc8faebccc",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "user",
+			"value": "4d4db59e-4a79-45ca-8ea2-acdc8faebccc"
+		},
+		{
+			"key": "password",
+			"value": "-"
+		}
+	]
+}

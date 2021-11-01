@@ -20,6 +20,11 @@ module.exports = {
     'padded-blocks': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
-    camelcase: 'off',
+    // eslint-disable-next-line quote-props
+    'camelcase': 'off',
+    'no-constant-condition': 'off',
+    'consistent-return': 'off',
+    'import/export': 'off',
+
   },
 };
