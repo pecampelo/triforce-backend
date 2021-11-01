@@ -26,7 +26,7 @@ This will be an application made to connect with the [Trio API](https://share.tr
 * **Typescript** for better scalability with the client-side.
 * **MongoDB** for non-relational database querying and simple JSON document storage.
 * **Mongoose** as a facilitator to Mongo.
-* **API** module to facilitate requests with authorization methods.x
+* **API** npm module to facilitate requests with authorization methods.x
 
 ## Develop and Deploy Technologies
 
@@ -44,25 +44,28 @@ This will be an application made to connect with the [Trio API](https://share.tr
 * [X] Draw database system
 * [X] Draw out Docker-Compose wireframe
 * [X] Figma wireframe
-* [ ] Test API request
-* [ ] Test API access
+* [X] Test API request
+* [X] Test API access
 * [ ] Test if data is saved in the database
 * [ ] Test if data is sent to the front-end
 * [ ] Server
-  * [ ] Figure out how to do cUgit aRL requests in the back-end
-  * [ ] App
-  * [ ] Router
+  * [X] Figure out how to do cURL or fetch requests in the back-end
+  * [X] App
+  * [X] Router
   * [ ] Controller
-  * [ ] Write out npm scripts  
-  * [ ] Finish configuring Docker-compose volume
+  * [ ] Schemas
+  * [X] Database connection
+  * [X] Write out npm scripts
+  * Build image
 * [ ] Client
-  * [ ] Simple design
+  * [X] Simple design
   * [ ] HTML & CSS
   * [ ] Components
-  * [ ] Write out npm scripts  
-  * [ ] Finish configuring Docker-compose volume
+  * [ ] Write out npm scripts
+  * [ ] Build image
+* [ ] Configure Docker-Compose image
 * [ ] Deploy to AWS Fargate cluster(?)
 
 ## Creation period
 
-* (Figma project)[https://www.figma.com/file/mEX8yGYT9r1HGyJmavg1pF/Untitled?node-id=5%3A172]
+* [Figma Project](https://www.figma.com/file/mEX8yGYT9r1HGyJmavg1pF/Untitled?node-id=5%3A172)
