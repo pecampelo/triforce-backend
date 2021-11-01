@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+
+  app:
+    build: ../triforce-frontend
+    ports:
+    - "3000:3000"
+    network:
+    - triforce
+
+  server:
+    build: ./server
+    ports: "5000:5000"
+    depends_on:
+    - mongo
+    network:
+    - triforce
+
+  db:
+    image: mongo
+    ports:
+    - "27017:27017"
+    network:
+    - triforce
+    volumes:
+    - mongo-data:/data/db
+
+networks:
+  triforce:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
