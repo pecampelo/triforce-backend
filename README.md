@@ -48,12 +48,12 @@ This will be an application made to connect with the [Trio API](https://share.tr
 * [X] Test API access
 * [ ] Test if data is saved in the database
 * [ ] Test if data is sent to the front-end
-* [ ] Server
+* [X] Server
   * [X] Figure out how to do cURL or fetch requests in the back-end
   * [X] App
   * [X] Router
-  * [ ] Controller
-  * [ ] Schemas
+  * [X] Controller
+  * [X] Schemas
   * [X] Database connection
   * [X] Write out npm scripts
   * Build image
@@ -63,7 +63,7 @@ This will be an application made to connect with the [Trio API](https://share.tr
   * [ ] Components
   * [ ] Write out npm scripts
   * [ ] Build image
-* [ ] Configure Docker-Compose image
+* [X] Configure Docker-Compose image
 * [ ] Deploy to AWS Fargate cluster(?)
 
 ## Creation period
